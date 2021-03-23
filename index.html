@@ -367,16 +367,19 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2021/03/23/hello-world/" >
+        <a class="abstract-title" href = "/2021/03/23/first/" >
             
-                <span>Hello World</span>
+                <span>[Untitled Post]</span>
         </a>
         <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+            CAP 理论只能三取其二
+C:  一致性A:  可用性P:  分区容忍性
 
-More info: Writing
-Run server1$ hexo ...
+证明：一个分布式系统最多只能同时满足一致（Consistency)、可用性 （Availability）和分区容忍性（Partition Tolerance）这三项中的两项。
+
+一致性：所有节点同时看到相同的数据，更新操作成功并返回客户端完成后，所有节点在同一时间的数据完全一致等同于所有节点拥有数据的最新版本。
+
+可用性：任何时候读写都是成功的，即服务一值可用，而且是正常响应时间。我们平时会看到一些IT公司的对外宣传，比如系统稳定性已经做到3个9、4个9，即99.9%、99.99%，这里的N个9就是对可用性的一个...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -597,7 +600,7 @@ Run server1$ hexo ...
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2021/03/23/hello-world/" >Hello World</a>
+            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2021/03/23/first/" >[Untitled Post]</a>
         </li>
     
     </div>
