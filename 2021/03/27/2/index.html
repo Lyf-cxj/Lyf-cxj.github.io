@@ -20,21 +20,21 @@
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="CAP 理论只能三取其二 C:  一致性A:  可用性P:  分区容忍性  证明：一个分布式系统最多只能同时满足一致（Consistency)、可用性 （Availability）和分区容忍性（Partition Tolerance）这三项中的两项。  一致性：所有节点同时看到相同的数据，更新操作成功并返回客户端完成后，所有节点在同一时间的数据完全一致等同于所有节点拥有数据的最新版本。  可用性：">
+    <meta name="description" content="递归实现全排列1949这四个数随意组合，找出质数的个数  中间出现两个9，需要去重，可以考虑set题目不难，主要细心  全排列有一定的模板，可以先写出模板再进行其它的考虑 1234567891011121314151617181920212223242526272829public class Demo&amp;#123;    static void f(int []a,int k)&amp;#123;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CAP理论与Base理论">
-<meta property="og:url" content="http://example.com/2021/03/23/first/index.html">
+<meta property="og:title" content="全排列">
+<meta property="og:url" content="http://example.com/2021/03/27/2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="CAP 理论只能三取其二 C:  一致性A:  可用性P:  分区容忍性  证明：一个分布式系统最多只能同时满足一致（Consistency)、可用性 （Availability）和分区容忍性（Partition Tolerance）这三项中的两项。  一致性：所有节点同时看到相同的数据，更新操作成功并返回客户端完成后，所有节点在同一时间的数据完全一致等同于所有节点拥有数据的最新版本。  可用性：">
+<meta property="og:description" content="递归实现全排列1949这四个数随意组合，找出质数的个数  中间出现两个9，需要去重，可以考虑set题目不难，主要细心  全排列有一定的模板，可以先写出模板再进行其它的考虑 1234567891011121314151617181920212223242526272829public class Demo&amp;#123;    static void f(int []a,int k)&amp;#123;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-03-23T12:59:16.377Z">
-<meta property="article:modified_time" content="2021-03-27T08:16:54.480Z">
+<meta property="article:published_time" content="2021-03-27T08:02:10.427Z">
+<meta property="article:modified_time" content="2021-03-27T08:02:10.429Z">
 <meta property="article:author" content="gulfBaby">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
-    <title>CAP理论与Base理论 · GulfBaby&#39;s Studio</title>
+    <title>全排列 · GulfBaby&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -229,7 +229,7 @@
                 <a href="/" >GulfBaby&#39;s Studio.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">CAP理论与Base理论</a>
+                <a href="#" class="post-name">全排列</a>
             </div>
     </div>
     
@@ -259,7 +259,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            CAP理论与Base理论
+            全排列
             <!-- 404 -->
             
         </h1>
@@ -278,12 +278,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">611</span>Reading time: <span class="post-count reading-time">2 min</span></span>
+                        <span>Word count: <span class="post-count word-count">207</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2021/03/23</span>
+                    <span class="post-intro-time">2021/03/27</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -407,35 +407,20 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h3 id="CAP-理论只能三取其二"><a href="#CAP-理论只能三取其二" class="headerlink" title="CAP 理论只能三取其二"></a>CAP 理论只能三取其二</h3><blockquote>
-<p>C:  一致性<br>A:  可用性<br>P:  分区容忍性</p>
+        <h4 id="递归实现全排列"><a href="#递归实现全排列" class="headerlink" title="递归实现全排列"></a>递归实现全排列</h4><p>1949这四个数随意组合，找出质数的个数</p>
+<blockquote>
+<p>中间出现两个9，需要去重，可以考虑set<br>题目不难，主要细心</p>
 </blockquote>
-<h4 id="证明："><a href="#证明：" class="headerlink" title="证明："></a>证明：</h4><p>一个分布式系统最多只能同时满足一致（Consistency)、可用性 （Availability）和分区容忍性（Partition Tolerance）这三项中的两项。</p>
-<ul>
-<li><p><strong>一致性</strong>：所有节点同时看到相同的数据，更新操作成功并返回客户端完成后，所有节点在同一时间的数据完全一致等同于所有节点拥有数据的最新版本。</p>
-</li>
-<li><p><strong>可用性</strong>：任何时候读写都是成功的，即服务一值可用，而且是正常响应时间。我们平时会看到一些IT公司的对外宣传，比如系统稳定性已经做到3个9、4个9，即99.9%、99.99%，这里的N个9就是对可用性的一个描述，叫做SLA，即服务水平协议。比如我们说月度99.95%的SLA，则意味着每个月服务器出现的故障时间只能占总时间的0.05%，如果这个月是30天，那么就是21.6分钟。</p>
-</li>
-<li><p><strong>分区容忍性</strong>：系统容忍网络出现分区，并且在遇见某个节点或网络分区之间网络不可达的情况下，仍然能够对外提供满足一致性和可用性的服务。</p>
-</li>
-</ul>
-<h4 id="反证："><a href="#反证：" class="headerlink" title="反证："></a>反证：</h4><p>如果CAP同时满足，由于允许P的存在，则一定存在节点之间的丢包，如此就不能保证C。</p>
-<p>因为允许分区容错，写操作可能在节点1上成功后，在节点2上失败，这时候对于Client 1(读取节点1) 和Client 2（读取节点2）就会读取到不同的值，出现了不一致情况，如果要保持一致性，写操作必须同时失效，也就降低系统的可用性。</p>
-<h3 id="Base理论"><a href="#Base理论" class="headerlink" title="Base理论"></a>Base理论</h3><p>Base理论是CAP理论的一种妥协，由于CAP理论只能三取其二，Base理论降低了发生分区融错时对可用性和一致性的要求。</p>
-<ul>
-<li> <strong>基本可用性</strong> ：允许可用性降低（可能相应时长变长，可能服务降级）</li>
-<li> <strong>软状态</strong> ：允许系统中的数据存在中间状态，并认为该中间状态不会影响系统整体可用性</li>
-<li> <strong>最终一致性</strong>：节点数据同步可以存在时延，但在一定期限后必须达成数据的一致，状态变为最终状态</li>
-</ul>
-
+<p>全排列有一定的模板，可以先写出模板再进行其它的考虑</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> []a,<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(k==<span class="number">4</span>) <span class="keyword">return</span> a;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=k;j&lt;<span class="number">4</span>;j++)&#123;</span><br><span class="line">           <span class="keyword">int</span> t=a[j];</span><br><span class="line">           a[j]=a[k];</span><br><span class="line">           a[k]=t;</span><br><span class="line">           f(a,k+<span class="number">1</span>);</span><br><span class="line">           <span class="comment">//这里要换回来</span></span><br><span class="line">           t=a[j];</span><br><span class="line">           a[j]=a[k];</span><br><span class="line">           a[k]=t;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">static</span> Set&lt;Integer&gt; set=<span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">    <span class="function"><span class="keyword">boolean</span> <span class="title">judje</span><span class="params">(<span class="keyword">int</span> [] a)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> t=a[<span class="number">0</span>]*<span class="number">1000</span>+a[<span class="number">1</span>]*<span class="number">100</span>+a[<span class="number">2</span>]*<span class="number">10</span>+a[<span class="number">3</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;Math.sqrt(t);i++)&#123;</span><br><span class="line">           <span class="keyword">if</span>(t%i==<span class="number">0</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        set.add(t);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">       <span class="keyword">int</span> []a=&#123;<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">9</span>&#125;;</span><br><span class="line">       f(a,<span class="number">0</span>);</span><br><span class="line">       System.out.println(set.size());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>Author：<a href="http://example.com">gulfBaby</a>
-            <p>原文链接：<a href="http://example.com/2021/03/23/first/">http://example.com/2021/03/23/first/</a>
-            <p>发表日期：<a href="http://example.com/2021/03/23/first/">March 23rd 2021, 8:59:16 pm</a>
-            <p>更新日期：<a href="http://example.com/2021/03/23/first/">March 27th 2021, 4:16:54 pm</a>
+            <p>原文链接：<a href="http://example.com/2021/03/27/2/">http://example.com/2021/03/27/2/</a>
+            <p>发表日期：<a href="http://example.com/2021/03/27/2/">March 27th 2021, 4:02:10 pm</a>
+            <p>更新日期：<a href="http://example.com/2021/03/27/2/">March 27th 2021, 4:02:10 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -443,13 +428,13 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2021/03/27/2/" title= "全排列">
-                    <div class="nextTitle">全排列</div>
-                </a>
-            
         </li>
         <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2021/03/23/first/" title= "CAP理论与Base理论">
+                    <div class="prevTitle">CAP理论与Base理论</div>
+                </a>
             
         </li>
     </ul>
@@ -578,7 +563,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#CAP-%E7%90%86%E8%AE%BA%E5%8F%AA%E8%83%BD%E4%B8%89%E5%8F%96%E5%85%B6%E4%BA%8C"><span class="toc-number">1.</span> <span class="toc-text">CAP 理论只能三取其二</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%81%E6%98%8E%EF%BC%9A"><span class="toc-number">1.1.</span> <span class="toc-text">证明：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%8D%E8%AF%81%EF%BC%9A"><span class="toc-number">1.2.</span> <span class="toc-text">反证：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Base%E7%90%86%E8%AE%BA"><span class="toc-number">2.</span> <span class="toc-text">Base理论</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%85%A8%E6%8E%92%E5%88%97"><span class="toc-number">1.</span> <span class="toc-text">递归实现全排列</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
