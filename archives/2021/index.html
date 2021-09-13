@@ -354,6 +354,45 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2021/07/13/ftp-linux/" >
+            
+                <span>ftp建立</span>
+        </a>
+        <div class="abstract-content">
+            
+遇到问题
+
+1.vuser下放虚拟用户对应的权限文件名字用用户名命名，一个用户对应一个文件
+错误显示：！出错图片
+2.注意配置文件不要多多余的空行
+3.修改yml文件的端口
+4.通过查看出错报告以及返回的数值去解决问题
+
+搭建步骤
+
+查看本机是否安装vsftpd1rpm -qa |grep vsftpd
+可以检测出是否安装vsftpd,如果没有可以采用下面语句进行安装
+1yum -y install vsftpd
+
+添加用户1useradd vsftpd -s &#x2F;sbin&#x2F;nologin
+添加虚拟用户1vi &#x2F;etc&#x2F;vsftpd&#x2F;vu...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/07/13</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2021/03/27/2/" >
             
                 <span>全排列</span>
@@ -528,9 +567,16 @@ C:  一致性A:  可用性P:  分区容忍性
     
     
     
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 2
+        Total : 3
         </div>
         <!-- search  -->
         
@@ -543,6 +589,11 @@ C:  一致性A:  可用性P:  分区容忍性
     
     <div class="archive-year"> 2021 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/13</span><a class="archive-post-title" href= "/2021/07/13/ftp-linux/" >ftp建立</a>
+        </li>
     
     
         <li class="archive-post-item">
