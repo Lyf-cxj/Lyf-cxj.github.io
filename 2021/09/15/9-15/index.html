@@ -20,21 +20,21 @@
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="遇到问题  1.vuser下放虚拟用户对应的权限文件名字用用户名命名，一个用户对应一个文件 错误显示：！出错图片 2.注意配置文件不要多多余的空行 3.修改yml文件的端口 4.通过查看出错报告以及返回的数值去解决问题  搭建步骤  查看本机是否安装vsftpd1rpm -qa |grep vsftpd 可以检测出是否安装vsftpd,如果没有可以采用下面语句进行安装 1yum -y insta">
+    <meta name="description" content="八锁问题第一种：java&#96;&#96;&#96;&#x2F;&#x2F;一个对象两个普通同步方法public class Test{   Phone phone&#x3D;new Phone();   new Thread(()-&gt;phone.snedSms();,”A”).start();   &#x2F;&#x2F;捕获异常   try{       TimeUnit.SECONDS.sleep(1);   }catch(InterruptedExcep">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ftp建立">
-<meta property="og:url" content="http://example.com/2021/07/13/ftp-linux/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/09/15/9-15/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="遇到问题  1.vuser下放虚拟用户对应的权限文件名字用用户名命名，一个用户对应一个文件 错误显示：！出错图片 2.注意配置文件不要多多余的空行 3.修改yml文件的端口 4.通过查看出错报告以及返回的数值去解决问题  搭建步骤  查看本机是否安装vsftpd1rpm -qa |grep vsftpd 可以检测出是否安装vsftpd,如果没有可以采用下面语句进行安装 1yum -y insta">
+<meta property="og:description" content="八锁问题第一种：java&#96;&#96;&#96;&#x2F;&#x2F;一个对象两个普通同步方法public class Test{   Phone phone&#x3D;new Phone();   new Thread(()-&gt;phone.snedSms();,”A”).start();   &#x2F;&#x2F;捕获异常   try{       TimeUnit.SECONDS.sleep(1);   }catch(InterruptedExcep">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-07-13T09:23:43.365Z">
-<meta property="article:modified_time" content="2021-09-13T06:46:37.396Z">
+<meta property="article:published_time" content="2021-09-15T13:51:50.804Z">
+<meta property="article:modified_time" content="2021-09-15T13:52:42.237Z">
 <meta property="article:author" content="gulfBaby">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
-    <title>ftp建立 · GulfBaby&#39;s Studio</title>
+    <title>GulfBaby&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -229,7 +229,7 @@
                 <a href="/" >GulfBaby&#39;s Studio.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">ftp建立</a>
+                <a href="#" class="post-name"></a>
             </div>
     </div>
     
@@ -259,7 +259,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            ftp建立
+            [Untitled Post]
             <!-- 404 -->
             
         </h1>
@@ -278,12 +278,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">410</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">1k</span>Reading time: <span class="post-count reading-time">5 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2021/07/13</span>
+                    <span class="post-intro-time">2021/09/15</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -407,56 +407,53 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <ul>
-<li><h4 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h4></li>
-</ul>
-<p>1.vuser下放虚拟用户对应的权限文件<br>名字用用户名命名，一个用户对应一个文件</p>
-<p>错误显示：<br>！<a href="img/1.png">出错图片</a></p>
-<p>2.注意配置文件不要多多余的空行</p>
-<p>3.修改yml文件的端口</p>
-<p>4.通过查看出错报告以及返回的数值去解决问题</p>
-<ul>
-<li><h4 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h4></li>
-</ul>
-<h5 id="查看本机是否安装vsftpd"><a href="#查看本机是否安装vsftpd" class="headerlink" title="查看本机是否安装vsftpd"></a>查看本机是否安装vsftpd</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa |grep vsftpd</span><br></pre></td></tr></table></figure>
-<p>可以检测出是否安装vsftpd,如果没有可以采用下面语句进行安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install vsftpd</span><br></pre></td></tr></table></figure>
+        <h3 id="八锁问题"><a href="#八锁问题" class="headerlink" title="八锁问题"></a>八锁问题</h3><p>第一种：<br>java```<br>//一个对象两个普通同步方法<br>public class Test{<br>   Phone phone=new Phone();<br>   new Thread(()-&gt;phone.snedSms();,”A”).start();<br>   //捕获异常<br>   try{<br>       TimeUnit.SECONDS.sleep(1);<br>   }catch(InterruptedException e){<br>       e.printStackTrace();<br>   }<br>   new Thread(()-&gt;phone.call(),”B”).start();<br>}<br>class Phone{<br>    public synchronized void sendSms(){<br>        try{<br>            TimeUnit.SECONDS.sleep(4);<br>        }catch(InterruptedException e){<br>            e.printStackTrace();<br>        }<br>       System.out.println(“发短信”);<br>    }<br>    public synchronized void call(){<br>       System.out,println(“打电话”);<br>    }<br>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">结果：</span><br><span class="line">&gt;发短信</span><br><span class="line">&gt;打电话</span><br><span class="line"></span><br><span class="line">synchronized 锁的对象是方法的调用者，这两个方法用的是同一个锁phone,谁先拿到谁执行</span><br><span class="line"></span><br><span class="line">第二种：</span><br><span class="line"></span><br><span class="line">java&#96;&#96;&#96;</span><br><span class="line">&#x2F;&#x2F;一个对象一个同步方法一个普通方法</span><br><span class="line">public class Test&#123;</span><br><span class="line">   Phone phone&#x3D;new Phone();</span><br><span class="line">   new Thread(()-&gt;phone.snedSms();,&quot;A&quot;).start();</span><br><span class="line">   &#x2F;&#x2F;捕获异常</span><br><span class="line">   try&#123;</span><br><span class="line">       TimeUnit.SECONDS.sleep(1);</span><br><span class="line">   &#125;catch(InterruptedException e)&#123;</span><br><span class="line">       e.printStackTrace();</span><br><span class="line">   &#125;</span><br><span class="line">   new Thread(()-&gt;phone.call(),&quot;B&quot;).start();</span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line">class Phone&#123;</span><br><span class="line">    public synchronized void sendSms()&#123;</span><br><span class="line">	    try&#123;</span><br><span class="line">            TimeUnit.SECONDS.sleep(4);</span><br><span class="line">        &#125;catch(InterruptedException e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">	   System.out.println(&quot;发短信&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	public void call()&#123;</span><br><span class="line">	   System.out,println(&quot;打电话&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<blockquote>
+<p>打电话<br>发短信</p>
+</blockquote>
+<p>call方法没有锁，不是同步方法，不受锁的影响</p>
+<p>第三种：</p>
+<p>java```<br>//两个对象两个同步方法<br>public class Test{<br>   Phone phone1=new Phone();<br>   Phone phone2=new Phone();<br>   new Thread(()-&gt;phone1.snedSms();,”A”).start();<br>   //捕获异常<br>   try{<br>       TimeUnit.SECONDS.sleep(1);<br>   }catch(InterruptedException e){<br>       e.printStackTrace();<br>   }<br>   new Thread(()-&gt;phone2.call(),”B”).start();</p>
+<p>}<br>class Phone{<br>    public synchronized void sendSms(){<br>        try{<br>            TimeUnit.SECONDS.sleep(4);<br>        }catch(InterruptedException e){<br>            e.printStackTrace();<br>        }<br>       System.out.println(“发短信”);<br>    }<br>    public synchronized void call(){<br>       System.out,println(“打电话”);<br>    }<br>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">结果：</span><br><span class="line">&gt;打电话</span><br><span class="line">&gt;发短信</span><br><span class="line"></span><br><span class="line">因为锁的是两个不同的对象，两把锁</span><br><span class="line"></span><br><span class="line">第四种：</span><br><span class="line"></span><br><span class="line">java&#96;&#96;&#96;</span><br><span class="line">&#x2F;&#x2F;一个对象两个静态同步方法</span><br><span class="line">public class Test&#123;</span><br><span class="line">   Phone phone&#x3D;new Phone();</span><br><span class="line">   new Thread(()-&gt;phone.snedSms();,&quot;A&quot;).start();</span><br><span class="line">   &#x2F;&#x2F;捕获异常</span><br><span class="line">   try&#123;</span><br><span class="line">       TimeUnit.SECONDS.sleep(1);</span><br><span class="line">   &#125;catch(InterruptedException e)&#123;</span><br><span class="line">       e.printStackTrace();</span><br><span class="line">   &#125;</span><br><span class="line">   new Thread(()-&gt;phone.call(),&quot;B&quot;).start();</span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line">class Phone&#123;</span><br><span class="line">    public static synchronized void sendSms()&#123;</span><br><span class="line">	    try&#123;</span><br><span class="line">            TimeUnit.SECONDS.sleep(4);</span><br><span class="line">        &#125;catch(InterruptedException e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">	   System.out.println(&quot;发短信&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	public static synchronized void call()&#123;</span><br><span class="line">	   System.out,println(&quot;打电话&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h5 id="添加用户"><a href="#添加用户" class="headerlink" title="添加用户"></a>添加用户</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd vsftpd -s &#x2F;sbin&#x2F;nologin</span><br></pre></td></tr></table></figure>
-<h5 id="添加虚拟用户"><a href="#添加虚拟用户" class="headerlink" title="添加虚拟用户"></a>添加虚拟用户</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;vsftpd&#x2F;vuserlist</span><br></pre></td></tr></table></figure>
-<p>一行用户名一行密码（密码在实际中尽量取得复杂点）</p>
-<h5 id="生成认证文件"><a href="#生成认证文件" class="headerlink" title="生成认证文件"></a>生成认证文件</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db_load -T -t hash -f &#x2F;etc&#x2F;vsftpd&#x2F;vuerlist &#x2F;etc&#x2F;vsftpd&#x2F;vuserliat.db</span><br></pre></td></tr></table></figure>
-<h5 id="编辑认证配置"><a href="#编辑认证配置" class="headerlink" title="编辑认证配置"></a>编辑认证配置</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;pam.d&#x2F;vsftpd</span><br></pre></td></tr></table></figure>
-<p>注释原来内容，添加下面内容</p>
+<p>结果：</p>
 <blockquote>
-<p>auth required /lib64/security/pam_userdb.so db=/etc/vsftpd/vuserlist<br>account required /lib64/security/pam_userdb.so db=/etc/vsftpd/vuserlist</p>
+<p>发短信<br>打电话</p>
 </blockquote>
-<ul>
-<li>注意32位操作系统用lib,64位系统用lib64 *</li>
-</ul>
-<h5 id="新建文件夹并授权"><a href="#新建文件夹并授权" class="headerlink" title="新建文件夹并授权"></a>新建文件夹并授权</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;data</span><br><span class="line">mkdir vsftpd</span><br><span class="line">chown vsftpd:vsftpd vsftpd</span><br></pre></td></tr></table></figure>
-<h5 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;vsftpd&#x2F;vsftpd.conf</span><br></pre></td></tr></table></figure>
-<p>写入</p>
+<p>因为static 是静态方法，类一加载就有了，class模板，只有唯一一个Phone.class对象，所以锁的是class</p>
+<p>第五种：</p>
+<p>java```<br>//两个对象两个静态方法<br>public class Test{<br>   Phone phone1=new Phone();<br>   Phone phone2=new Phone();<br>   new Thread(()-&gt;phone1.snedSms();,”A”).start();<br>   //捕获异常<br>   try{<br>       TimeUnit.SECONDS.sleep(1);<br>   }catch(InterruptedException e){<br>       e.printStackTrace();<br>   }<br>   new Thread(()-&gt;phone2.call(),”B”).start();</p>
+<p>}<br>class Phone{<br>    public static synchronized void sendSms(){<br>        try{<br>            TimeUnit.SECONDS.sleep(4);<br>        }catch(InterruptedException e){<br>            e.printStackTrace();<br>        }<br>       System.out.println(“发短信”);<br>    }<br>    public static synchronized void call(){<br>       System.out,println(“打电话”);<br>    }<br>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">结果：</span><br><span class="line">&gt;发短信</span><br><span class="line">&gt;打电话</span><br><span class="line"></span><br><span class="line">因为static 是静态方法，类一加载就有了，class模板，只有唯一一个Phone.class对象，所以锁的是class</span><br><span class="line"></span><br><span class="line">第六种：</span><br><span class="line"></span><br><span class="line">java&#96;&#96;&#96;</span><br><span class="line">&#x2F;&#x2F;一个对象一个静态同步方法一个普通同步方法</span><br><span class="line">public class Test&#123;</span><br><span class="line">   Phone phone&#x3D;new Phone();</span><br><span class="line">   new Thread(()-&gt;phone.snedSms();,&quot;A&quot;).start();</span><br><span class="line">   &#x2F;&#x2F;捕获异常</span><br><span class="line">   try&#123;</span><br><span class="line">       TimeUnit.SECONDS.sleep(1);</span><br><span class="line">   &#125;catch(InterruptedException e)&#123;</span><br><span class="line">       e.printStackTrace();</span><br><span class="line">   &#125;</span><br><span class="line">   new Thread(()-&gt;phone.call(),&quot;B&quot;).start();</span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line">class Phone&#123;</span><br><span class="line">    &#x2F;&#x2F;静态同步方法</span><br><span class="line">    public static synchronized void sendSms()&#123;</span><br><span class="line">	    try&#123;</span><br><span class="line">            TimeUnit.SECONDS.sleep(4);</span><br><span class="line">        &#125;catch(InterruptedException e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">	   System.out.println(&quot;发短信&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	&#x2F;&#x2F;普通同步方法</span><br><span class="line">	public synchronized void call()&#123;</span><br><span class="line">	   System.out,println(&quot;打电话&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
 <blockquote>
-<p>guest_enable=YES<br>guest_username=vsftpd<br>pam_service_name=vsftpd<br>userlist_enable=YES<br>tcp_wrappers=YES<br>chroot_local_user=NO<br>allow_writeable_chroot=YES<br>user_config_dir=/etc/vsftpd/vuser<br>dual_log_enable=YES<br>vsftpd_log_file=/var/log/vsftpd.log</p>
+<p>打电话<br>发短信</p>
 </blockquote>
-<p>阿里云需要关闭IPV6的监听，改成监听IPV4</p>
-<blockquote>
-<p>listen=YES<br>listen_ipv6=NO</p>
-</blockquote>
-<h5 id="新建vuser目录修改用户配置"><a href="#新建vuser目录修改用户配置" class="headerlink" title="新建vuser目录修改用户配置"></a>新建vuser目录修改用户配置</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;vsftpd</span><br><span class="line">mkdir vuser</span><br><span class="line">cd vuser</span><br><span class="line">vi admin  &#x2F;&#x2F;admin为你前面起的用户名的名字，一个用户对用一个这个文件，用来堆用户授权</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>local_root=/data/vsftpd<br>anon_umask=022<br>anon_upload_enable=yes<br>anon_mkdir_write_enable=yes<br>anon_other_write_enable=yes</p>
-</blockquote>
-<h5 id="启动vsftpd服务"><a href="#启动vsftpd服务" class="headerlink" title="启动vsftpd服务"></a>启动vsftpd服务</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">service start vsftpd</span><br><span class="line">service restart vsftpd  &#x2F;&#x2F;重启</span><br><span class="line">service stop vsftpd   &#x2F;&#x2F;关闭</span><br></pre></td></tr></table></figure>
+<p>因为static 是静态方法，类一加载就有了，class模板，只有唯一一个Phone.class对象，所以锁的是class<br>而普通同步方法锁的是phone对象</p>
+<p>第七种：</p>
+<p>java```<br>//两个对像一个静态同步方法一个普通同步方法<br>public class Test{<br>   Phone phone1=new Phone();<br>   Phone phone2=new Phone();<br>   new Thread(()-&gt;phone1.snedSms();,”A”).start();<br>   //捕获异常<br>   try{<br>       TimeUnit.SECONDS.sleep(1);<br>   }catch(InterruptedException e){<br>       e.printStackTrace();<br>   }<br>   new Thread(()-&gt;phone2.call(),”B”).start();</p>
+<p>}<br>class Phone{<br>    //静态同步方法<br>    public static synchronized void sendSms(){<br>        try{<br>            TimeUnit.SECONDS.sleep(4);<br>        }catch(InterruptedException e){<br>            e.printStackTrace();<br>        }<br>       System.out.println(“发短信”);<br>    }<br>    //普通同步方法<br>    public synchronized void call(){<br>       System.out,println(“打电话”);<br>    }<br>}</p>
+<pre><code>
+结果：
+&gt;打电话
+&gt;发短信
+
+因为static 是静态方法，类一加载就有了，class模板，只有唯一一个Phone.class对象，所以锁的是class
+而普通同步方法锁的是phone2对象
+</code></pre>
+
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>Author：<a href="http://example.com">gulfBaby</a>
-            <p>原文链接：<a href="http://example.com/2021/07/13/ftp-linux/">http://example.com/2021/07/13/ftp-linux/</a>
-            <p>发表日期：<a href="http://example.com/2021/07/13/ftp-linux/">July 13th 2021, 5:23:43 pm</a>
-            <p>更新日期：<a href="http://example.com/2021/07/13/ftp-linux/">September 13th 2021, 2:46:37 pm</a>
+            <p>原文链接：<a href="http://example.com/2021/09/15/9-15/">http://example.com/2021/09/15/9-15/</a>
+            <p>发表日期：<a href="http://example.com/2021/09/15/9-15/">September 15th 2021, 9:51:50 pm</a>
+            <p>更新日期：<a href="http://example.com/2021/09/15/9-15/">September 15th 2021, 9:52:42 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -464,17 +461,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2021/09/13/work/" title= "九月份面试">
-                    <div class="nextTitle">九月份面试</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2021/03/27/2/" title= "全排列">
-                    <div class="prevTitle">全排列</div>
+                <a href= "/2021/09/13/work/" title= "九月份面试">
+                    <div class="prevTitle">九月份面试</div>
                 </a>
             
         </li>
@@ -604,7 +596,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">遇到问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4"><span class="toc-number">2.</span> <span class="toc-text">搭建步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%9C%AC%E6%9C%BA%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85vsftpd"><span class="toc-number">2.1.</span> <span class="toc-text">查看本机是否安装vsftpd</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7"><span class="toc-number">2.2.</span> <span class="toc-text">添加用户</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E8%99%9A%E6%8B%9F%E7%94%A8%E6%88%B7"><span class="toc-number">2.3.</span> <span class="toc-text">添加虚拟用户</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E8%AE%A4%E8%AF%81%E6%96%87%E4%BB%B6"><span class="toc-number">2.4.</span> <span class="toc-text">生成认证文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BC%96%E8%BE%91%E8%AE%A4%E8%AF%81%E9%85%8D%E7%BD%AE"><span class="toc-number">2.5.</span> <span class="toc-text">编辑认证配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E5%B9%B6%E6%8E%88%E6%9D%83"><span class="toc-number">2.6.</span> <span class="toc-text">新建文件夹并授权</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.7.</span> <span class="toc-text">修改配置文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B0%E5%BB%BAvuser%E7%9B%AE%E5%BD%95%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE"><span class="toc-number">2.8.</span> <span class="toc-text">新建vuser目录修改用户配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8vsftpd%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.9.</span> <span class="toc-text">启动vsftpd服务</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AB%E9%94%81%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">八锁问题</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
